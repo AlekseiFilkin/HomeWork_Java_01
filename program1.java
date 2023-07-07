@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class program1 {
     public static void main(String[] args) {
-        Scanner iscanner = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
         System.out.print("Введите число n: ");
-        Integer n = iscanner.nextInt();
+        Integer n = in.nextInt();
+        in.close();
         Integer summ = 0;
         Integer factorial = 1;
         for (int i = 1; i <= n; i++) {
